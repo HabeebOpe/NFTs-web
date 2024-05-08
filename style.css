@@ -31,11 +31,7 @@
 }
 
 body {
-  background-color: var(--body-color);
-}
-
-.container {
-  padding: 0;
+  background-color: var(--secondary-color);
 }
 
 .home {
@@ -65,6 +61,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 nav .logo img {
   width: 50px;
 }
@@ -188,6 +185,7 @@ nav .connect-wallet-button button:hover {
     padding: 5px;
     font-size: 16px;
     color: #fff;
+    text-wrap: nowrap;
   }
 
   .nav-item ul li:hover {
@@ -195,9 +193,13 @@ nav .connect-wallet-button button:hover {
     border-bottom: 1.5px solid var(--primary-color);
   }
 
+  .home-section-body h1 {
+    font-size: 6vw;
+    padding-bottom: 10px;
+  }
 
   .home-image {
-    background-size: 90vw;
+    background-size: 70vw;
   }
 }
 
@@ -271,6 +273,11 @@ nav .connect-wallet-button button:hover {
   .section-2 {
     padding: 20px 5%;
   }
+
+  .section-2 .div1 h2 {
+    font-size: 4vw;
+  }
+
 }
 
 .section-3 {
@@ -419,6 +426,11 @@ nav .connect-wallet-button button:hover {
     padding: 20px 5%;
   }
 
+  .section-3 .div1 h2 {
+    font-size: 4vw;
+  }
+
+
   .section-3 .div2 ul li {
     width: 30%;
     writing-mode: horizontal-tb;
@@ -531,10 +543,6 @@ nav .connect-wallet-button button:hover {
   overflow: hidden;
 }
 
-.section-4 .div2 ul li:hover .mid div {
-  height: 300px;
-}
-
 .section-4 .div2 ul li .mid img {
   position: absolute;
   top: 0;
@@ -586,6 +594,11 @@ nav .connect-wallet-button button:hover {
   .section-4 {
     padding: 20px 5%;
   }
+
+  .section-4 .div1 h2 {
+    font-size: 4vw;
+  }
+
 
   .section-4 .div2 ul {
     flex-direction: row;
@@ -697,6 +710,11 @@ nav .connect-wallet-button button:hover {
   .section-5 {
     padding: 20px 10%;
   }
+
+  .section-5 .div1 h2 {
+    font-size: 4vw;
+  }
+
 
   .section-5 .div2 ul {
     flex-wrap: wrap;
@@ -828,4 +846,9 @@ nav .connect-wallet-button button:hover {
   .section-6 .div2 input {
     width: 60%;
   }
+
+  .section-6 .div1 h2 {
+    font-size: 4vw;
+  }
+
 }
