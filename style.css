@@ -107,7 +107,7 @@ nav .connect-wallet-button button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 60px);
   color: var(--text-color);
 }
 
@@ -124,11 +124,11 @@ nav .connect-wallet-button button:hover {
 }
 
 .home-section-body .p1 {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .home-section-body .p2 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .home-section-body .home-btns {
@@ -200,7 +200,7 @@ nav .connect-wallet-button button:hover {
   }
 
   .home-image {
-    background-size: 70vw;
+    background-size: 60vw;
   }
 }
 
