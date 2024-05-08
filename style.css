@@ -45,7 +45,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: none;
 }
 
 .home .div1 {
@@ -222,7 +221,6 @@ nav .connect-wallet-button button:hover {
 .section-2 {
   padding: 20px 0;
   background-color: var(--secondary-color);
-  display: none;
 }
 
 .section-2 .div1 {
@@ -453,7 +451,6 @@ nav .connect-wallet-button button:hover {
 .section-4 {
   padding: 20px 0;
   background-color: var(--secondary-color);
-  display: none;
 }
 
 .section-4 .div1 {
@@ -689,4 +686,22 @@ nav .connect-wallet-button button:hover {
   font-size: 15px;
   color: var(--body-color);
   background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
+}
+
+@media only screen and (min-width: 900px) {
+  .section-5 {
+    padding: 20px 10%;
+  }
+  
+  .section-5 .div2 ul{
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section-5 .div2 ul li {
+    height: 200px;
+    min-width: 40%;
+    max-width: 40%;
+  }
 }
