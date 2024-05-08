@@ -163,7 +163,7 @@ nav .connect-wallet-button button:hover {
   background-repeat: no-repeat;
   background-size: 100vw;
   background-position: center;
-  height: 30vh;
+  height: 300px;
   width: 100%;
 }
 
@@ -196,6 +196,7 @@ nav .connect-wallet-button button:hover {
   .home-section-body h1 {
     font-size: 6vw;
     padding-bottom: 10px;
+    line-height: 7vw;
   }
 
   .home-image {
