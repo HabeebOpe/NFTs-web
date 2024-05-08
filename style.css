@@ -13,6 +13,7 @@
   --mid-color: #AE1D6B;
   --text-color: #fff;
   --hover-1: #3B0926;
+  --hover-2: #450E27;
   --trans-2: 0.2s ease;
   --trans-3: 0.3s ease;
 
@@ -63,6 +64,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 9999;
 }
 
 nav .logo img {
@@ -101,8 +104,9 @@ nav .connect-wallet-button button {
 }
 
 nav .connect-wallet-button button:hover {
-  color: var(--text-color);
-  background-color: var(--primary-color);
+  border: 1.5px solid transparent;
+  color: var(--body-color);
+  background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
 }
 
 .home-section {
@@ -140,34 +144,24 @@ nav .connect-wallet-button button:hover {
   padding-top: 15px;
 }
 
-.home-section-body .home-btns button {
-  width: 120px;
+.home .btn1 {
+  width: 150px;
   padding: 8px 10px;
   font-size: 16px;
-}
-
-.home-section-body .home-btns button:first-child {
-  border: none;
+  border: 1.5px solid transparent;
   border-radius: 20px;
-  color: #fff;
+  color: var(--body-color);
   background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
 }
 
-.home-section-body .home-btns button:first-child:hover {
-  border: 2px solid var(--primary-color);
-  background: transparent;
-}
-
-.home-section-body .home-btns button:last-child {
+.home .btn2 {
+  width: 150px;
+  padding: 8px 10px;
+  font-size: 16px;
   border: 2px solid var(--primary-color);
   border-radius: 20px;
   color: #fff;
   background: transparent;
-}
-
-.home-section-body .home-btns button:last-child:hover {
-  border: none;
-  background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
 }
 
 .home-image {
@@ -515,10 +509,17 @@ nav .connect-wallet-button button:hover {
 .section-4 .div2 ul li .top button {
   padding: 7px 10px;
   border-radius: 10px;
-  border: none;
+  border: 1.5px solid transparent;
   color: var(--body-color);
   background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
 }
+
+
+.section-4 .div2 ul li .top button:hover {
+  background: var(--secondary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
 
 .section-4 .div2 ul li .mid {
   padding: 5px 10px;
@@ -662,39 +663,46 @@ nav .connect-wallet-button button:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.section-5 .div2 ul li .top .lol{
+.section-5 .div2 ul li .top .lol {
   padding: 10px;
   border-radius: 5px;
   color: var(--body-color);
   background-color: var(--secondary-color);
 }
 
-.section-5 .div2 ul li .top .lol p{
+.section-5 .div2 ul li .top .lol p {
   display: flex;
   padding: 5px 0 10px 0;
 }
 
-.section-5 .div2 ul li .top .lol p span:last-child{
+.section-5 .div2 ul li .top .lol p span:last-child {
   font-size: 13px;
 }
 
-.section-5 .div2 ul li .top .lol button{
+.section-5 .div2 ul li .top .lol button {
   margin-top: 10px;
   padding: 7px 13px;
   border-radius: 5px;
-  border: none;
+  border: 1.5px solid transparent;
   font-size: 15px;
   color: var(--body-color);
   background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
 }
 
+
+.section-5 .div2 ul li .top .lol button:hover {
+  background: var(--secondary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
+
 @media only screen and (min-width: 900px) {
   .section-5 {
     padding: 20px 10%;
   }
-  
-  .section-5 .div2 ul{
-    flex-wrap:wrap;
+
+  .section-5 .div2 ul {
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
@@ -703,5 +711,124 @@ nav .connect-wallet-button button:hover {
     height: 200px;
     min-width: 40%;
     max-width: 40%;
+  }
+}
+
+
+.section-6 {
+  padding: 20px 0;
+  background-color: var(--secondary-color);
+}
+
+.section-6 .div1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2px;
+  color: var(--body-color);
+}
+
+.section-6 .div1 p {
+  font-size: 16px;
+}
+
+.section-6 .div1 h2 {
+  font-size: 6vw;
+}
+
+.section-6 .div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.section-6 .div2 input {
+  width: 80%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  color: var(--body-color);
+  background-color: var(--hover-2);
+}
+
+.section-6 .div2 input:focus {
+  border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.section-6 .div2 button {
+  width: 150px;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  border: 1.5px solid var(--secondary-color);
+  font-size: 16px;
+  color: var(--body-color);
+  background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
+}
+
+.section-6 .div2 button:hover {
+  background: var(--secondary-color);
+  border: 1.5px solid var(--primary-color);
+}
+
+.section-7 {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background-color: var(--secondary-color);
+  color: var(--body-color);
+}
+
+.section-7 p {
+  font-size: 16px;
+}
+
+.section-7 div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-7 div img {
+  width: 40px;
+}
+
+.section-7 ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-7 ul li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--primary-color);
+  background-color: var(--hover-2);
+  font-size: 18px;
+}
+
+.section-7 ul li:hover {
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 900px) {
+  .section-6 .div2 input {
+    width: 60%;
   }
 }
