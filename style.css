@@ -12,7 +12,7 @@
   --secondary-color: #200615;
   --mid-color: #AE1D6B;
   --text-color: #fff;
-  --hover-1: #3B0926; 
+  --hover-1: #3B0926;
   --trans-2: 0.2s ease;
   --trans-3: 0.3s ease;
 
@@ -258,7 +258,7 @@ nav .connect-wallet-button button:hover {
   transition: var(--trans-3);
 }
 
-.section-2 .div2 ul li:hover{
+.section-2 .div2 ul li:hover {
   background-color: var(--hover-1);
 }
 
@@ -330,7 +330,7 @@ nav .connect-wallet-button button:hover {
   overflow: hidden;
 }
 
-.section-3 .div2 ul li .info{
+.section-3 .div2 ul li .info {
   position: absolute;
   top: 0;
   left: -100%;
@@ -344,11 +344,11 @@ nav .connect-wallet-button button:hover {
   transition: var(--trans-3);
 }
 
-.section-3 .div2 ul li:hover .info{
+.section-3 .div2 ul li:hover .info {
   left: 0;
 }
 
-.section-3 .div2 ul li .info .div{
+.section-3 .div2 ul li .info .div {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -356,35 +356,35 @@ nav .connect-wallet-button button:hover {
   padding: 10px;
 }
 
-.section-3 .div2 ul li .info .p1{
+.section-3 .div2 ul li .info .p1 {
   font-size: 15px;
   font-weight: bold;
   color: var(--primary-color);
 }
 
-.section-3 .div2 ul li .info .p2{
+.section-3 .div2 ul li .info .p2 {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: var(--primary-color);
 }
 
-.section-3 .div2 ul li .info .p2 i{
+.section-3 .div2 ul li .info .p2 i {
   margin: 0 5px;
 }
 
-.section-3 .div2 ul li .info .art-by{
+.section-3 .div2 ul li .info .art-by {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.section-3 .div2 ul li .info .art-by p{
+.section-3 .div2 ul li .info .art-by p {
   font-size: 16px;
   color: var(--body-color);
 }
 
-.section-3 .div2 ul li .info .art-by div{
+.section-3 .div2 ul li .info .art-by div {
   position: relative;
   min-width: 30px;
   max-width: 30px;
@@ -393,7 +393,7 @@ nav .connect-wallet-button button:hover {
   overflow: hidden;
 }
 
-.section-3 .div2 ul li .info .art-by div img{
+.section-3 .div2 ul li .info .art-by div img {
   position: absolute;
   top: 0;
   left: 0;
@@ -453,6 +453,7 @@ nav .connect-wallet-button button:hover {
 .section-4 {
   padding: 20px 0;
   background-color: var(--secondary-color);
+  display: none;
 }
 
 .section-4 .div1 {
@@ -599,4 +600,93 @@ nav .connect-wallet-button button:hover {
   .section-4 .div2 ul li {
     width: 32%;
   }
+}
+
+.section-5 {
+  padding: 20px 0;
+  background-color: var(--secondary-color);
+}
+
+.section-5 .div1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  color: var(--body-color);
+}
+
+.section-5 .div1 p {
+  font-size: 16px;
+}
+
+.section-5 .div1 h2 {
+  font-size: 6vw;
+}
+
+.section-5 .div2 ul {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.section-5 .div2 ul li {
+  position: relative;
+  min-width: 220px;
+  max-width: 220px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.section-5 .div2 ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-5 .div2 ul li .top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.section-5 .div2 ul li:hover .top {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section-5 .div2 ul li .top .lol{
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--body-color);
+  background-color: var(--secondary-color);
+}
+
+.section-5 .div2 ul li .top .lol p{
+  display: flex;
+  padding: 5px 0 10px 0;
+}
+
+.section-5 .div2 ul li .top .lol p span:last-child{
+  font-size: 13px;
+}
+
+.section-5 .div2 ul li .top .lol button{
+  margin-top: 10px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: var(--body-color);
+  background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
 }
