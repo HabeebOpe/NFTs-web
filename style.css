@@ -244,6 +244,7 @@ nav .connect-wallet-button button:hover {
 
 .section-2 .div2 ul li {
   min-width: 200px;
+  max-width: 200px;
   padding: 10px;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
@@ -368,6 +369,20 @@ nav .connect-wallet-button button:hover {
 
 .section-3 .div2 ul li .info .p2 i {
   margin: 0 5px;
+}
+
+.section-3 .div2 ul li .info button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1.5px solid transparent;
+  color: var(--body-color);
+  background: radial-gradient(circle at 100px 100px, #D91F75, #801960);
+}
+
+
+.section-3 .div2 ul li .info button:hover {
+  background: var(--secondary-color);
+  border: 1.5px solid var(--primary-color);
 }
 
 .section-3 .div2 ul li .info .art-by {
